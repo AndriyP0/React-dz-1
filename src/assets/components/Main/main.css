@@ -1,0 +1,9 @@
+.main{
+    margin-top: 90px;
+    text-align: center;
+
+}
+.main section {
+  border-bottom: 1px solid darkblue;
+  margin:20px 30px;
+}
