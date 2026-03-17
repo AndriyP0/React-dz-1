@@ -11,12 +11,11 @@ class App extends React.Component {
             nulla cumque sapiente quae praesentium amet. Sed sit reprehenderit
             numquam aliquam aspernatur aut, temporibus in rem labore iure,
             quisquam nobis adipisci.`,
-    actors: `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Asperiores, officiis.`,
+    actors: ['VASA','Petya','Vica','lesya','Toxa','Volondemord Igorovich','Garry Poshuruvav'],
     info: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
             architecto, officiis repudiandae id doloremque voluptatem nostrum
             tempora minus temporibus beatae.`,
-    footerInfo: ["Lorem, ipsum dolor.", "andriy@gmail,com", "099999923"],
+    footerInfo: ["Lorem, ipsum dolor.", "andriy@gmail,com", "099999923",],
   };
   render() {
     return (

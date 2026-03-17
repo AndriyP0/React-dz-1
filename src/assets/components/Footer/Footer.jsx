@@ -1,21 +1,19 @@
-import React from "react";
+import React, { Component } from "react";
 import "./footer.css";
 
-export default function Footer({ footerInfo }) {
-  return (
-    <div className="footer">
-      <div className="address">
-        <h3>address</h3>
-        <p>{footerInfo[0]}</p>
-      </div>
-      <div className="email">
-        <h3>email</h3>
-        <p>{footerInfo[1]}</p>
-      </div>
-      <div className="phone">
-        <h3>phone</h3>
-        <p>{footerInfo[2]}</p>
-      </div>
-    </div>
-  );
+export class Footer extends Component {
+  render() {
+    const footerInfo = this.props.footerInfo;
+    return (
+      <>
+        <ul className="footer">
+          {footerInfo.map((inffo) => {
+            return <li key={inffo}>{inffo}</li>;
+          })}
+        </ul>
+      </>
+    );
+  }
 }
+
+export default Footer;

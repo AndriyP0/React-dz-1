@@ -16,7 +16,11 @@ export default class Main extends Component {
         </section>
         <section className="actors">
           <h3>Actors</h3>
-          <p>{movie.actors}</p>
+          <ul className="actors">
+            {movie.actors.map((actor) => {
+              return <li key={actor}>{actor}</li>;
+            })}
+          </ul>
         </section>
         <section className="info">
           <h3>Info</h3>
